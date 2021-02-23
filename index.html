@@ -38,16 +38,23 @@
     } 
 
     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Muli:300,700');
 html {
   margin: 0 !important;
   padding: 0 !important;  
+  overflow-y: scroll; 
 }
+
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
-    background: #eee;
-    height: auto;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #8e8e8e;
+  background: #fff;
 }
 
 li a {
@@ -60,7 +67,42 @@ a:hover {
   color: #fff;
 }
 .nav-wrapper {
-  background: #eeeeee;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Old Standard TT', serif;
+  line-height: 1.1;
+}
+
+h2, h3 {
+  color: #282828; 
+  font-weight: 400;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 1rem;
+  width: 100%;
+  font-size: 3.125rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  text-align: justify;
 }
 
   </style>
