@@ -134,12 +134,15 @@ p {
 }
 
 #intro-backg{
-	background-color: rgba(0, 173, 181,0.6);
-	width: 30vw;
-	height: 25vh;
+  background-image: url("https://cdn.glitch.com/e997a4e5-67d8-46f3-a1a4-d0d9581b1304%2Fimage2.jpeg?v=1614051740560");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+	width: 30%;
+	height: 30%;
 	position: absolute;
 	right: 0;
-	top: 8%;
+	top: 0;
 	z-index: -2;
 }
 
@@ -148,7 +151,7 @@ p {
 	position: relative;
 	padding: 0.8em;
 	text-align: center;
-	bottom:100px;
+	bottom:130px;
 	background-color: #3a4750;
 }
 
@@ -267,9 +270,8 @@ p {
                   <i class="material-icons" style="color: #212529">menu</i>
               </a>
               <ul class="right hide-on-med-and-down">
-                <li class="myNav"><a href="/">Home</a></li>
+                <li class="myNav"><a href="/">About</a></li>
                 <li class="myNav"><a href="#service">Services</a></li> 
-                <li class="myNav"><a href="#team">Our Team</a></li>
                 <li class="myNav"><a href="#clients">Patients</a></li> 
                 <li class="myNav"><a href="#contact">Contact</a></li> 
               </ul>
@@ -277,9 +279,8 @@ p {
       </nav>
     </div>
       <ul class="sidenav" id="mobile-links">
-        <li><a href="/">Home</a></li> 
+        <li><a href="/">About</a></li> 
         <li><a href="#service">Services</a></li> 
-        <li><a href="#team">Our Team</a></li>
         <li><a href="#clients">Patients</a></li> 
         <li><a href="#contact">Contact</a></li> 
       </ul>
@@ -316,7 +317,7 @@ p {
   var tl = gsap.timeline();
   tl.from("#intro-text", { duration: 1.5, x: -1000, opacity: 0 });
   tl.from("#intro-img", { duration: 1.5, x: 1000, opacity: 0 }, "-=0.7");
-  tl.from("#intro-backg", { duration: 1.5, opacity: 0 }, "-=0.5");
+  tl.from("#intro-backg", { duration: 2.5, opacity: 0 }, "-=0.5");
   tl.from("#intro-buttons", { duration: 1.5, scaleY: 0, opacity: 0 }, "-=1");
 });
 
