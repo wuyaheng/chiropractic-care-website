@@ -55,7 +55,6 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #8e8e8e;
   background: #fff;
 }
 
@@ -72,190 +71,17 @@ a:hover {
   background: #fff;
 }
 
-h1, h2, h3 {
-  font-family: 'Old Standard TT', serif;
-  line-height: 1.1;
+.introText h3{
+  letter-spacing: 2px;
+  font-size: 2.5rem !important;
+  line-height: 3.5rem;
 }
 
-h2, h3 {
-  color: #282828; 
-  font-weight: 400;
-}
-
-h1 {
-  position: relative;
-  z-index: 2;
-  margin: 0 0 1rem;
-  width: 100%;
-  font-size: 3.125rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-h2 {
+.introText span {
+  letter-spacing: 1px;
   font-size: 2.5rem;
-  margin: 1rem 0 1.5rem;
 }
 
-h3 {
-  font-size: 1.875rem;
-  margin: 0 0 2rem;
-}
-
-p {
-  margin: 0 0 1.5rem;
-  text-align: justify;
-}
-
-
-#intro{
-	display: block;
-	position: relative;
-	margin-bottom: -12em;
-}
-
-#intro-text{
-	background-color: #eeeeee;
-	position: relative;
-	padding: 4em;
-	text-align: center;
-	width: 55vw;
-	left: 0;
-	top: 2vh;
-	z-index: -1;
-}
-
-#intro-img{
-	position: relative;
-	left: 50vw;
-	width: 30vw;
-	height: auto;
-	bottom: 102px
-}
-
-#intro-backg{
-  background-image: url("https://cdn.glitch.com/e997a4e5-67d8-46f3-a1a4-d0d9581b1304%2Fimage2.jpeg?v=1614051740560");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
-	width: 30%;
-	height: 30%;
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: -2;
-}
-
-#intro-buttons{
-	width: 100%;
-	position: relative;
-	padding: 0.8em;
-	text-align: center;
-	bottom:130px;
-	background-color: #3a4750;
-}
-
-#intro-buttons button{
-	display: block;
-	margin: auto;
-	padding: 1em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	background-color: white;
-	border-radius: 1em;
-	border: none;
-}
-
-#intro-buttons a,#intro-buttons a:link,#intro-buttons a:visited{
-	text-decoration: none;
-	color: black;
-}
-
-#intro-buttons button:hover{
-	background-color: #eeeeee;
-}
-
-
-
-
-
-/* for desktops n large screens */
-@media only screen and (max-width: 1100px){
-	#intro-buttons{
-		bottom: 237px;
-		left: 38vw;
-	}
-
-}
-/* small screens n laptops */
-@media only screen and (max-width:1025px){
-	#intro-buttons{
-		bottom: 225px;
-		font-size: 0.8em;
-	}
-}
-@media only screen and (max-width:950px){
-	#intro-buttons button,#aside-text button{
-		font-size: 0.9em;
-		padding: 0.8em;
-}
-	#intro-buttons{
-		bottom: 190px;
-		padding: 0.8em;
-	}
-
-}
-
-
-/* tablets n ipads */
-@media only screen and (max-width:768px){
-#intro-buttons{
-  bottom: 185px;
-}
-#intro-buttons button{
-  font-size: 0.8em;
-}
-}
-@media only screen and (max-width:730px){
-#intro-buttons{
-  bottom: 165px;
-}
-#intro-img{
-  bottom: 85px;
-}
-}
-@media only screen and (max-width:620px){
-#intro-buttons button{
-  display: inline-block;
-}
-#intro-buttons{
-  width: 32vw;
-  bottom: 130px;
-  left: 30vw;
-}
-#intro-buttons button:last-of-type{
-  margin-left: 0.3em;
-}
-#intro-img{
-  width: 35vw;
-}
-
-}
-@media only screen and (max-width:590px){
-#intro-text{
-  padding: 3em;
-}
-}
-/* phones */
-@media only screen and (max-width:481px){
-#intro-buttons{
-  width: 45vw;
-  left: 10vw;
-}
-#intro-img{
-  width: 46.5vw;
-}
-}
 
   </style>
 </head>
@@ -286,16 +112,19 @@ p {
       </ul>
 
 
-      <section id="intro">
-        <div id="intro-text">
-          <h2>Dr. Neeti Bahl Provides Optimum Chiropractic Care in New York</h2>
+      <div class="container-fluid p-0 m-0">
+        <div class="row m-0 h-100"> 
+          <div class="col-md-5 my-auto">
+            <div class="introText">
+            <h3 class="text-center">Dr. Neeti Dureja Provides<br/> <span>Optimum Chiropractic Care</span></h3> 
+          </div>
+          </div>
+
+          <div class="col-md-7 p-0">
+          <img width="100%" src="https://cdn.glitch.com/e997a4e5-67d8-46f3-a1a4-d0d9581b1304%2Fimage1.jpeg?v=1614050611146" id="intro-img">
+          </div>
         </div>
-          <img src="https://cdn.glitch.com/e997a4e5-67d8-46f3-a1a4-d0d9581b1304%2Fimage1.jpeg?v=1614050611146" id="intro-img">
-        <div id="intro-backg"></div>
-        <div id="intro-buttons">
-          <button><a href="#contact">Relieve My Pain Today</a></button>
-        </div>
-      </section>
+      </div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -311,18 +140,6 @@ p {
        $(document).ready(function(){
       $('.sidenav').sidenav();
   }); 
-
-
-  window.addEventListener("DOMContentLoaded", function () {
-  var tl = gsap.timeline();
-  tl.from("#intro-text", { duration: 1.5, x: -1000, opacity: 0 });
-  tl.from("#intro-img", { duration: 1.5, x: 1000, opacity: 0 }, "-=0.7");
-  tl.from("#intro-backg", { duration: 2.5, opacity: 0 }, "-=0.5");
-  tl.from("#intro-buttons", { duration: 1.5, scaleY: 0, opacity: 0 }, "-=1");
-});
-
-
-
 
  </script>
 </body>
